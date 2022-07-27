@@ -9,7 +9,6 @@ body {
 }
 
 * {
-  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
 }
 .top-nav .logo{
@@ -144,4 +143,35 @@ body {
   .menu>li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icons {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+footer {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
 }
