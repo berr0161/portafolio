@@ -47,6 +47,7 @@ body {
 }
 
 .menu>li a {
+  font-family: 'Montserrat', sans-serif;
   color: white;
  text-decoration: none;
 }
@@ -145,6 +146,14 @@ body {
   .menu>li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+}
+h1{
+  font-family: 'League Spartan', sans-serif;
+
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
 }
 .black-cover{
   height: 100%;
@@ -254,3 +263,6 @@ footer {
     font-size: 2rem;
   }
 }
+
+/*font-family: 'League Spartan', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
