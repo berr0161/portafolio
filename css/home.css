@@ -4,6 +4,8 @@ body{
 
 html,
 body {
+  background-size: cover;
+  background-image: url(../images/background-image-home.jpg);
   margin: 0;
   height: 100%;
 }
@@ -145,6 +147,24 @@ body {
   }
 }
 
+.content-area{
+  color: white;
+  text-align: justify;
+  margin-left: 5%;
+  width: 90%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+
+.button {
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  background-color:#FF1616;
+  border-radius: 1rem;
+}
 
 
 
