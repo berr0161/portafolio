@@ -166,20 +166,6 @@ body {
   border-radius: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .icons {
   font-size: 2rem;
   display: flex;
@@ -194,4 +180,66 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: column-reverse;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+
+  .menu>li {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+
+  .top-nav{
+    padding: 1.5em;
+  }
+
+  .content-area {
+    display: flex;
+    align-items: baseline;
+  }
+  .button {
+    margin-top: 10px;
+    color: white;
+    background-color: #FF1616;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 5rem;
+  }
+  p{
+    font-size: 3rem;
+  }
+
+  .menu>li {
+    margin: 0 2rem;
+    font-size: 2rem;
+  }
+
+  .top-nav{
+    padding: 2.5em;
+  }
+
+  .content-area {
+    display: flex;
+    align-items: baseline;
+  }
+  .button {
+    margin-top: 10px;
+    color: white;
+    background-color: #FF1616;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 2rem;
+  }
 }
