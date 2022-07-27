@@ -146,8 +146,19 @@ body {
     border-bottom: 1px solid #444;
   }
 }
-
+.black-cover{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 5rem;
+  background-color:black;
+  opacity: .5;
+  width: 100%;
+  z-index: 9;
+}
 .content-area{
+  position: relative;
+  z-index: 99;
   color: white;
   text-align: justify;
   margin-left: 5%;
