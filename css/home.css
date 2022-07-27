@@ -108,6 +108,7 @@ body {
   }
 
   .menu {
+    z-index: 999;
     position: absolute;
     top: 0;
     margin-top: 50px;
@@ -147,6 +148,18 @@ body {
     border-bottom: 1px solid #444;
   }
 }
+
+.black-cover {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  background-color: black;
+  opacity: .5;
+  width: 100%;
+  z-index: 9;
+}
+
 h1{
   font-family: 'League Spartan', sans-serif;
 
@@ -155,16 +168,7 @@ h1{
 p{
   font-family: 'Montserrat', sans-serif;
 }
-.black-cover{
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 5rem;
-  background-color:black;
-  opacity: .5;
-  width: 100%;
-  z-index: 9;
-}
+
 .content-area{
   position: relative;
   z-index: 99;
@@ -249,7 +253,16 @@ footer {
   .top-nav{
     padding: 2.5em;
   }
-
+  .black-cover{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    background-color:black;
+    opacity: .5;
+    width: 100%;
+    z-index: 9;
+  }
   .content-area {
     display: flex;
     align-items: baseline;
