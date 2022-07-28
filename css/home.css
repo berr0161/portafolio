@@ -239,25 +239,24 @@ footer {
 
 @media (min-width: 1280px) {
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   p{
-    font-size: 3rem;
-  }
-
-  .menu>li {
-    margin: 0 2rem;
     font-size: 2rem;
   }
 
+  .menu>li {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+  }
+
   .top-nav{
-    padding: 2.5em;
+    padding: 2em;
   }
   .black-cover{
     height: 100%;
     position: absolute;
     left: 0;
-    top: 5rem;
     background-color:black;
     opacity: .5;
     width: 100%;
@@ -267,14 +266,16 @@ footer {
     display: flex;
     align-items: baseline;
   }
+
+  
   .button {
     margin-top: 10px;
     color: white;
     background-color: #FF1616;
     border-radius: 1rem;
-    padding: 2rem;
-    font-size: 2rem;
-  }
+    padding: 1rem;
+    font-size: 1.5rem;
+}
 }
 
 /*font-family: 'League Spartan', sans-serif;
