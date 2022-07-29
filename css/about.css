@@ -214,18 +214,4 @@ body {
 
 
 
-.icons {
-  font-size: 2rem;
-  display: flex;
-  justify-content: space-evenly;
-}
 
-
-footer {
-  padding: 1rem;
-  background-color: black;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column-reverse;
-}

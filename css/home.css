@@ -1,216 +1,86 @@
-body{
-    background-color: bisque;
-}
-
 html,
 body {
-  background-size: cover;
-  background-image: url(../images/background-image-home.jpg);
-  margin: 0;
-  height: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-.top-nav .logo{
-  display: flex;
-  align-items: center;
-  grid-gap: 6px;
-  }
-  .top-nav .logo img{
-    width: 30px;
-    border-radius: 50%;
-    }
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  background: black;
-  color: #FFF;
-  height: 50px;
-  padding: 1em;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.menu>li {
-  margin: 0 1rem;
   overflow: hidden;
-}
-
-.menu>li a {
-  font-family: 'Montserrat', sans-serif;
-  color: white;
- text-decoration: none;
-}
-
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
+  margin: 0;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
-#menu-toggle {
-  display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-/*Creates nav for mobile giving the animation and the display of a column, I used z index so is not behind it*/
-@media (max-width: 700px) {
-  .menu-button-container {
-    display: flex;
-  }
-
-  .menu {
-    z-index: 999;
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #menu-toggle~.menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  #menu-toggle:checked~.menu li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .menu>li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: #222;
-  }
-
-  .menu>li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
+* .top-nav .logo {
+  width: 70px;
 }
 
 .black-cover {
   height: 100%;
   position: absolute;
+  top: 0;
   left: 0;
-  top: 3rem;
   background-color: black;
   opacity: .5;
   width: 100%;
   z-index: 9;
 }
 
-h1{
+h1 {
+  font-size: 3rem;
   font-family: 'League Spartan', sans-serif;
 
 }
 
-p{
+p {
   font-family: 'Montserrat', sans-serif;
 }
 
-.content-area{
+.content-area {
   position: relative;
+  display: flex;
+  justify-content: center;
   z-index: 99;
-  color: white;
-  text-align: justify;
-  margin-left: 5%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url(../images/background-image-home.jpg);
+}
+
+
+.content-area .area1 .logo {
+  display: none;
+}
+
+.area {
+  z-index: 999;
+  position: relative;
+  width: 70%;
   align-items: center;
   flex-direction: column;
   display: flex;
+  color: white;
+  text-align: justify;
 }
 
+.buttonss {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
 
 .button {
+  font-size: 1.2rem;
   margin-top: 10px;
-  padding: 10px;
+  padding: 14px;
   color: white;
-  background-color:#FF1616;
+  background-color: #FF1616;
   border-radius: 1rem;
-}
-
-.icons {
-  font-size: 2rem;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-footer {
-  padding: 1rem;
-  background-color: black;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column-reverse;
 }
 
 @media (min-width: 800px) {
   h1 {
     font-size: 2rem;
   }
-  p{
+
+  p {
     font-size: 1rem;
   }
 
@@ -219,7 +89,7 @@ footer {
     font-size: 1rem;
   }
 
-  .top-nav{
+  .top-nav {
     padding: 1.5em;
   }
 
@@ -227,6 +97,7 @@ footer {
     display: flex;
     align-items: baseline;
   }
+
   .button {
     margin-top: 10px;
     color: white;
@@ -235,14 +106,18 @@ footer {
     padding: 1rem;
     font-size: 1rem;
   }
+  a{
+    text-decoration: none;
+  }
 }
 
 @media (min-width: 1280px) {
   h1 {
     font-size: 4rem;
   }
-  p{
-    font-size: 2rem;
+
+  p {
+    font-size: 1.5rem;
   }
 
   .menu>li {
@@ -250,24 +125,53 @@ footer {
     font-size: 1.3rem;
   }
 
-  .top-nav{
+  .top-nav {
     padding: 2em;
   }
-  .black-cover{
+
+  header .top-nav .logo {
+    display: none;
+  }
+
+  .content-area .area1 .logo {
+    height: 150px;
+    display: inline-block;
+  }
+
+  .black-cover {
     height: 100%;
     position: absolute;
+    top: 0;
     left: 0;
-    background-color:black;
+    background-color: black;
     opacity: .5;
     width: 100%;
     z-index: 9;
   }
-  .content-area {
+
+  .area1 {
     display: flex;
-    align-items: baseline;
   }
 
-  
+  .content-area {
+    padding: 3.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 81vh;
+  }
+
+.area{
+  align-items: flex-start;
+}
+
+  .buttonss {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 2rem;
+  }
+
+
   .button {
     margin-top: 10px;
     color: white;
@@ -275,7 +179,7 @@ footer {
     border-radius: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
-}
+  }
 }
 
 /*font-family: 'League Spartan', sans-serif;
