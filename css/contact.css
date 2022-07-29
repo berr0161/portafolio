@@ -34,6 +34,7 @@
 }
 
 
+
 .contact {
   text-align: center;
   margin-top: 1rem;
@@ -72,10 +73,7 @@ input[id=subject]{
   margin: 8px 0;
 }
 
-.contact-form p{
-  font-size: 1.2rem;
-  font-weight: bold;
-}
+
 
 button {
   padding: 10px;
@@ -84,42 +82,45 @@ button {
   color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.icons {
-  font-size: 2rem;
-  display: flex;
-  justify-content: space-evenly;
+@media (min-width: 1280px) {
+  h3{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .main-container {
+    display: flex;
+    margin: 2rem;
+  }
+  .contact-form{
+    margin-right: 4rem;
+  }
+  button {
+    margin-left: 90%;
+  }
+  .contact-form p{
+    font-size: 25px;
+    font-weight: bold;
+  }
 }
+ 
 
 
-footer {
-  padding: 1rem;
-  background-color: black;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column-reverse;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -141,6 +141,13 @@
     font-family: 'League Spartan', sans-serif;
   
   }
+  .banner h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    z-index: 999;
+    position: relative;
+  }
   
   p{
     font-family: 'Montserrat', sans-serif;
