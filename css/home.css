@@ -8,7 +8,7 @@ body {
   justify-content: space-between;
 }
 
-* .top-nav .logo {
+.top-nav .logo {
   width: 70px;
 }
 

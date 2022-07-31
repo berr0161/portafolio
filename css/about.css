@@ -153,10 +153,6 @@ body {
     background-image: url(../images/about-banner.jpg);
   }
   
- 
-
-  
-
   .banner .banner-cover {
     height: 100%;
     position: absolute;
@@ -169,7 +165,10 @@ body {
   }
 
   h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem; 
     text-align: center;
+    font-weight: bolder;
   }
 
   img{
