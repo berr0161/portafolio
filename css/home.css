@@ -8,9 +8,6 @@ body {
   justify-content: space-between;
 }
 
-.top-nav .logo {
-  width: 70px;
-}
 
 .black-cover {
   height: 100%;
@@ -129,9 +126,7 @@ p {
     padding: 2em;
   }
 
-  header .top-nav .logo {
-    display: none;
-  }
+
 
   .content-area .area1 .logo {
     height: 150px;
