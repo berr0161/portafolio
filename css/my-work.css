@@ -1,6 +1,4 @@
-body {background-color: bisque;}
-
-  html,
+html,
 body {
   margin: 0;
   height: 100%;
@@ -36,7 +34,6 @@ body {
 
 h2{
   color: white;
-  margin-top: 50%;
 }
 
 .work{
@@ -45,6 +42,26 @@ h2{
   align-items: center;
   width: 90%;
   margin-left: 5%;
+}
+
+.work > div .black-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .4;
+  z-index: 9;
+  border-radius: 1rem;
+}
+
+.work > div {
+  position: relative;
+}
+
+.work > div h2 {
+  z-index: 99;
 }
 
 .photo {
@@ -71,8 +88,43 @@ h2{
   background-image: url(../images/web-400x400.jpg);
   background-size: cover;
   margin: 1rem;
-
   text-align: center;
 }
 
+.work > div {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
 
+  
+@media (min-width: 1280px) {
+  .work{
+    justify-content: center;
+    margin: 2rem auto;
+    grid-gap: 30px;
+    display: grid;
+    grid-template-areas: "area1 area2"
+                        "area3 area3";
+  }
+
+  .work > div {
+    margin: 0;
+    width: 450px;
+  }
+
+.photo{
+  grid-area: area1;
+}
+
+.video{
+  grid-area: area2;
+}
+
+.work .web {
+  width: 930px;
+  background-image: url(../images/web-800_x_400.jpg);
+  grid-area: area3;
+}
+}
