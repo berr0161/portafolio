@@ -55,6 +55,7 @@ p {
   display: flex;
   color: white;
   text-align: justify;
+  justify-content: space-evenly;
 }
 
 .buttonss {
@@ -146,6 +147,7 @@ p {
 
   .area1 {
     display: flex;
+    align-items: center;
   }
 
   .content-area {
@@ -153,7 +155,7 @@ p {
     align-items: flex-start;
     justify-content: flex-start;
     width: 100vw;
-    height: 81vh;
+    height: 82vh;
   }
 
 .area{
@@ -164,6 +166,7 @@ p {
     display: flex;
     flex-direction: row;
     grid-gap: 2rem;
+    margin-top: 1rem;
   }
 
 
