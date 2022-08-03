@@ -60,7 +60,6 @@ body {
 input[type=text] {
   width: 100%;
   padding: 5px 20px;
-  margin: 8px 0;
   box-sizing: border-box;
 }
 
@@ -68,7 +67,6 @@ input[type=text] {
 input[type=email] {
   width: 100%;
   padding: 5px 20px;
-  margin: 8px 0;
 }
 
 /* For mobile gives style to contact form affecting directly Subject*/
@@ -76,7 +74,6 @@ input[id=subject] {
   width: 100%;
   height: 80px;
   padding: 5px 20px;
-  margin: 8px 0;
 }
 
 
@@ -107,9 +104,20 @@ button {
     margin-left: 90%;
   }
 
-  .contact-form p {
-    font-size: 25px;
-    font-weight: bold;
+  form div {
+   display: flex;
+   align-items: flex-start;
+   margin-bottom: 8px;
+}
+
+form label {
+  padding: 5px;
+  min-width: 100px;
+  background-color: black;
+  color: white;
+}
+.red label {
+  background-color: red;
 }
 }
 

@@ -99,6 +99,11 @@ flex: 1;
 }
 
 @media (min-width: 1280px) {
+
+    .video-body.camera{
+        background-image: url(../images/background-video.jpg);
+      }
+
     .video-body{
         backdrop-filter:blur(4px);;
         background-size: contain;
