@@ -199,6 +199,7 @@ border-radius: 1rem;
     border-radius: 1rem;
   }
 
+
   @media (min-width: 1280px) {
     h2{
       font-weight: bold;
@@ -217,6 +218,17 @@ border-radius: 1rem;
     flex-direction: column;
   }
 
+.cesar, .reverse{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 6rem;
+  justify-content: space-between;
+  grid-gap: 2rem;
+}
+
+  .reverse {
+    flex-direction: row;
+  }
   }
     
   
