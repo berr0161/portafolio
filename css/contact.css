@@ -1,58 +1,61 @@
 .banner {
-    z-index: 9;
-    position: relative;
-    padding: 10px;
-    background-position: center center;
-    background-size: cover;
-    background-image: url(../images/contact-banner.jpg);
-  }
-  
-  html,
-  body {
-    margin: 0;
-    height: 100%;
-  }
-  
-  .banner h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: white;
-    z-index: 999;
-    position: relative;
-  }
-  
+  z-index: 9;
+  position: relative;
+  padding: 10px;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/contact-banner.jpg);
+}
 
-  .banner .banner-cover {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color:#7C0000;
-    opacity: .5;
-    width: 100%;
-    z-index: 99;
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.banner h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  z-index: 999;
+  position: relative;
+}
+
+
+.banner .banner-cover {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #7C0000;
+  opacity: .5;
+  width: 100%;
+  z-index: 99;
 }
 
 
 
 .contact {
+  padding: 10px;
+  grid-gap: 1rem;
   text-align: center;
   margin-top: 1rem;
-    margin-left: 5%;
-    background: black;
-    width: 90%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  margin-left: 5%;
+  background: black;
+  width: 90%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.contact-form{
+.contact-form {
   margin-left: 5%;
   width: 90%;
   padding: 1rem 0 1rem 0;
 }
+
 /*For mobile Gives style to contact form affecting directly Fullname*/
 input[type=text] {
   width: 100%;
@@ -60,14 +63,16 @@ input[type=text] {
   margin: 8px 0;
   box-sizing: border-box;
 }
+
 /* For mobile Gives style to contact form affecting directly Email*/
-input[type=email]{
+input[type=email] {
   width: 100%;
   padding: 5px 20px;
   margin: 8px 0;
 }
+
 /* For mobile gives style to contact form affecting directly Subject*/
-input[id=subject]{
+input[id=subject] {
   width: 100%;
   height: 80px;
   padding: 5px 20px;
@@ -84,44 +89,26 @@ button {
 }
 
 @media (min-width: 1280px) {
-  h3{
+  h3 {
     font-size: 25px;
     font-weight: bold;
   }
+
   .main-container {
     display: flex;
     margin: 2rem;
   }
-  .contact-form{
+
+  .contact-form {
     margin-right: 4rem;
   }
+
   button {
     margin-left: 90%;
   }
-  .contact-form p{
+
+  .contact-form p {
     font-size: 25px;
     font-weight: bold;
   }
 }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

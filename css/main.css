@@ -32,8 +32,17 @@
   }
   
   .menu>li {
+    padding: 7px;
     margin: 0 1rem;
     overflow: hidden;
+    transition: all .5s;
+  }
+  .active {
+    background-color: #FF1616 !important;
+  }
+  .menu > li:hover {
+    background-color: #FF1616;
+    transition: all .5s;
   }
   
   .menu>li a {
@@ -128,7 +137,6 @@
       display: flex;
       justify-content: center;
       margin: 0;
-      padding: 0.5em 0;
       width: 100%;
       color: white;
       background-color: #222;
@@ -138,7 +146,8 @@
       border-bottom: 1px solid #444;
     }
   }
-  
+
+
   h1{
     font-family: 'League Spartan', sans-serif;
   
