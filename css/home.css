@@ -108,7 +108,35 @@ p {
     text-decoration: none;
   }
 }
+@media (min-width: 800px) {
+  h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .area{
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .area1 {
+    display: flex;
+    align-items: center;
+  }
+  .content-area {
+    padding: 3.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 8}
 
+    .buttonss {
+      display: flex;
+      flex-direction: row;
+      grid-gap: 2rem;
+      margin-top: 1rem;
+    }
+  
+}
 @media (min-width: 1280px) {
   h1 {
     font-size: 4rem;
