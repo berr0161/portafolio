@@ -1,4 +1,8 @@
-* {
+html{
+  scroll-behavior: smooth;
+} 
+
+*{
   margin: 0;
     box-sizing: border-box;
   }
@@ -173,6 +177,18 @@
     font-family: 'Montserrat', sans-serif;
   }
 
+.skip-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.skip-top a {
+  padding: 10px;
+  margin: 10px;
+  background-color: #00BDD6;
+  color: white;
+}
    .icons {
         font-size: 1.2rem;
         display: flex;

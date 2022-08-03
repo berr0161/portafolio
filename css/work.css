@@ -73,11 +73,36 @@ margin: 2rem 0;
 position: relative;
 }
 
+.skip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skip a {
+    padding: 10px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+}
 .video-container .video img {
     width: 100%;
 }
 
+@media (min-width:600px){
+    .skip {
+        margin: 0 5rem 1rem 5rem;
+        flex-direction: row;
+    }
+}
+
 @media (min-width: 1280px) {
+    .video-body{
+        backdrop-filter:blur(4px);;
+        background-size: contain;
+        background-image: url(../images/background-web.jpg);
+      }
     .video-body > main {
         min-height: 85%;
     }
@@ -99,6 +124,10 @@ position: relative;
 
     .video-container {
         display: flex;
+        grid-gap: 1rem;
+        margin: 2rem;
     }
-
+   
 }
+
+
