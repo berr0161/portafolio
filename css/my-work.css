@@ -60,7 +60,12 @@ h2{
   position: relative;
 }
 
+a{
+  text-decoration: none;
+}
+
 .work > div h2 {
+  position: relative;
   z-index: 99;
 }
 
