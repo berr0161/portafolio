@@ -84,6 +84,22 @@ button {
   background: red;
   color: white;
 }
+
+form div {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+form label {
+ padding: 5px;
+ min-width: 100px;
+ background-color: black;
+ color: white;
+}
+.red label {
+ background-color: red;
+}
 @media (min-width: 800px){
   h3 {
     font-size: 20px;
@@ -94,6 +110,7 @@ button {
   .main-container {
     display: flex;
     margin: 2rem;
+    height: 60vh;
   }
 
   .contact-form {
@@ -104,21 +121,7 @@ button {
     margin-left: 90%;
   }
 
-  form div {
-   display: flex;
-   align-items: flex-start;
-   margin-bottom: 8px;
-}
-
-form label {
-  padding: 5px;
-  min-width: 100px;
-  background-color: black;
-  color: white;
-}
-.red label {
-  background-color: red;
-}
+  
 }
 
 
