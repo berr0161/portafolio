@@ -189,6 +189,29 @@ border-radius: 1rem;
     justify-content: space-between;
   }
   
+  .cesar h2 {
+    padding-top: 1.5rem;
+  }
+  
+.cesar .container2 picture {
+  padding-top: 1.5rem;
+}
+
+.cesar .container1 p {
+  padding-top: 1.5rem;
+}
+
+.reverse .container2 picture {
+  padding-top: 1.5rem;
+}
+
+.reverse .container1 p {
+  padding-top: 1.5rem;
+}
+
+.reverse h2 {
+  padding-top: 1.5rem;
+}
 
 
   .button {
